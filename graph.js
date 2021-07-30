@@ -23,43 +23,11 @@ const makePlot = async () => {
       x: times,
       y: freq,
       type: "scatter",
-      //   mode: "lines",
-      //   name: "Analytics ig",
-      //   hoverlabel: { namelength: -1 },
     },
   ];
 
   let layout = {
     title: "vhl.ink analytics",
-    // showlegend: true,
-    // legend: {
-    //   orientation: "h",
-    //   yref: "paper",
-    //   y: 0,
-    //   yanchor: "top",
-    // },
-    // annotations: [
-    //   {
-    //     xref: "paper",
-    //     yref: "paper",
-    //     x: 0.03,
-    //     xanchor: "right",
-    //     y: 1,
-    //     yanchor: "bottom",
-    //     text: "Positive Cases",
-    //     showarrow: false,
-    //   },
-    //   {
-    //     xref: "paper",
-    //     yref: "paper",
-    //     x: 1.01,
-    //     xanchor: "left",
-    //     y: 0.1,
-    //     yanchor: "top",
-    //     text: "Date",
-    //     showarrow: false,
-    //   },
-    // ],
   };
 
   let config = { responsive: true };
