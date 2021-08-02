@@ -1,6 +1,6 @@
 const makePlot = async () => {
   const url =
-    "https://f4m3oqg1tg.execute-api.us-west-1.amazonaws.com/default/getStats" +
+    "https://oazylu5q0a.execute-api.us-east-2.amazonaws.com/default/getVHLinkStats" +
     location.pathname;
 
   const data = await fetch(url)
