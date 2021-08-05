@@ -27,7 +27,7 @@ const makePlot = async () => {
   ];
 
   let layout = {
-    title: "vhl.ink analytics",
+    title: `vhl.ink analytics for ${location.pathname}`,
   };
 
   let config = { responsive: true };
