@@ -13,10 +13,10 @@ const makePlot = async () => {
 
   const times = timestamps.map((t) => new Date(Number(t) * 1000)); // convert to int then to ms then to date
 
-  console.log(times);
-  // e.g. ["1619817265", "1619817272", "1619817295", "1619817302", "1622149897", "1622149907", "1624994373", "1624994374"]
-  console.log(freq);
-  // e.g. [1, 1, 1, 1, 1, 1, 1, 1]
+  //   console.log(times);
+  //   // e.g. ["1619817265", "1619817272", "1619817295", "1619817302", "1622149897", "1622149907", "1624994373", "1624994374"]
+  //   console.log(freq);
+  //   // e.g. [1, 1, 1, 1, 1, 1, 1, 1]
 
   let trace = [
     {
