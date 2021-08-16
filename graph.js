@@ -23,6 +23,8 @@ const makePlot = async () => {
       x: times,
       y: freq,
       type: "scatter",
+      mode: "markers",
+      marker: { size: 8 },
     },
   ];
 
