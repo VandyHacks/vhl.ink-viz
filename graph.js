@@ -9,9 +9,13 @@ const makePlot = async () => {
 
   console.log(data);
   const timestamps = Object.keys(data);
+  timestamps.sort();
   const freq = Object.values(data);
 
   const times = timestamps.map((t) => new Date(Number(t) * 1000)); // convert to int then to ms then to date
+
+  let sum = 0;
+  const cumulativeFreq = freq.map(freq => sum += freq);
 
   //   console.log(times);
   //   // e.g. ["1619817265", "1619817272", "1619817295", "1619817302", "1622149897", "1622149907", "1624994373", "1624994374"]
@@ -21,10 +25,10 @@ const makePlot = async () => {
   let trace = [
     {
       x: times,
-      y: freq,
+      y: cumulativeFreq,
       type: "scatter",
-      mode: "markers",
-      marker: { size: 8 },
+      mode: "lines+markers",
+      marker: { size: 5 },
     },
   ];
 
